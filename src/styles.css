@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--color);
+}
+:root {
+  --color: #3d830b;
+}
+p {
+  color: white;
+  text-align: left;
+}
+h1 {
+  color: white;
+}
+.buttons {
+  margin: 1rem;
+  background-color: white;
+}
+button {
+  color: var(--color);
+  border: 2px solid var(--color);
+  background-color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 410px;
+}
+
+.list {
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  width: 70%;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.li {
+  color: black;
+}
+
+button:hover {
+  font-size: larger;
+}
