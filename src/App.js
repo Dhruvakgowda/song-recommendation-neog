@@ -3,21 +3,21 @@ import { useState } from "react";
 
 const Songs = {
   Pop: [
-    { songName: "Get Into it", Singer: "Doja Cat" },
-    { songName: "Cradles", Singer: "Sub Urban" },
-    { songName: "Galaxies", Singer: "Danny Olsen" }
+    { songName: "Get Into it", Singer: "Doja Cat", rate: "4.5/5" },
+    { songName: "Cradles", Singer: "Sub Urban", rate: "3.5/5" },
+    { songName: "Galaxies", Singer: "Danny Olsen", rate: "4/5" }
   ],
 
   Rock: [
-    { songName: "Sky is the limit", Singer: "Supreme Devices" },
-    { songName: "Run free", Singer: "Deep chills" },
-    { songName: "It's My Life", Singer: "Bon Jovi" }
+    { songName: "Sky is the limit", Singer: "Supreme Devices", rate: "4.8/5" },
+    { songName: "Run free", Singer: "Deep chills", rate: "3.5/5" },
+    { songName: "It's My Life", Singer: "Bon Jovi", rate: "4/5" }
   ],
 
   Vocal: [
-    { songName: "Don't know why", Singer: "We are fury" },
-    { songName: "Let me down slowly", Singer: "Alec Benjamin" },
-    { songName: "Moral of the Story", Singer: "Ashe" }
+    { songName: "Don't know why", Singer: "We are fury", rate: "4.5/5" },
+    { songName: "Let me down slowly", Singer: "Alec Benjamin", rate: "5/5" },
+    { songName: "Moral of the Story", Singer: "Ashe", rate: "4/5" }
   ]
 };
 
@@ -61,8 +61,12 @@ export default function App() {
             <i>
               <small>
                 <li key={item}>-{item.Singer}</li>
+                <br />
               </small>
             </i>
+            <small>
+              <li key={item}>{item.rate}</li>
+            </small>
           </ul>
         ))}
       </div>
